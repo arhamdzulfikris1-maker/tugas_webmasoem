@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  background: #ffffff;
+  color: white;
+  padding: 10px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.nav a {
+  color: rgb(70, 78, 220);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+:xr-overlay .nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: #f8f8f8 url('hero-bg.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 30px 20px;
+  color: #0b2c6a;
+}
+
+.hero-text h1 {
+  color: #ff6600;
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+/* Specialization section */
+.specialization,
+.unggulan {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #ff6600;
+}
+
+/* Content */
+.content {
+  width: 80%;
+  margin: 30px auto;
+  line-height: 1.7;
+}
+
+/* Info Boxes */
+.info-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #ddd;
+  padding: 30px 0;
+}
+
+.box {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Latest Section */
+.latest {
+  text-align: center;
+  padding: 40px 0;
+  background: #f9f9f9;
+}
+
+.latest .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.latest .card {
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.latest .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background: #0b2c6a;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  text-align: left;   /* agar teks rata kiri */
+    align-items: flex-start; /* memastikan posisinya di kiri kalau pakai flex */
+    margin-left: 40px;  /* memberi jarak dari sisi kiri halaman */
+}
+
+.partner-logos img {
+  width: 100px;
+  margin: 10px;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .latest .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.content h2 {
+    text-align: center;
+  }
+  .content ul {
+    text-align: center;
+    list-style-position: inside; /* agar titik/bullet ikut di tengah */
+    padding: 0;
+}
+
+.content li {
+    margin: 10px 0;
+}
+.content ul {
+    list-style: none;            /* menghapus titik/bullet */
+    text-align: center;          /* teks di tengah */
+    padding: 0 60px;             /* memberi jarak kanan-kiri */
+    margin: 20px auto;           /* jarak atas bawah dan tengah */
+    max-width: 900px;            /* batasi lebar agar tidak terlalu lebar di layar besar */
+}
+
+.content li {
+    margin: 10px 0;              /* jarak antar prodi */
+    line-height: 1.6;            /* biar teks lebih mudah dibaca */
+}
+/*anyar*/
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1;
+  margin: 10px;
+}
